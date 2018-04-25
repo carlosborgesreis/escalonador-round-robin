@@ -48,7 +48,7 @@ public class Queue {
     public String allList() {
         String saida = "";
         if (!isEmpty()) {
-            Node current = first; // do inicio
+            Node current = first; 
             while (current != null){
                 if (current.getData() != null && current.getData() != peek() && current.getData().burst != 0) {
                     saida += current.getData().name + "(" + current.getData().burst + ") ";
@@ -65,7 +65,7 @@ public class Queue {
         return "Não há processos na fila";
     }
 
-    //Insere elemento na Fila
+    
     public void enqueue(Process dado){
         Node newNode = new Node(dado);
 
